@@ -65,7 +65,7 @@ export default class Map {
     }
 
     handleClick(e) {
-        if (!e.ctrlKey) return;
+        if (!e.ctrlKey && !e.metaKey) return;
         e.preventDefault();
         e.stopPropagation();
 
